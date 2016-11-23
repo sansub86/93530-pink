@@ -1,16 +1,9 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Александр Суберляк](https://up.htmlacademy.ru/adaptive/9/user/93530).
-* Наставник: `Неизвестно`.
+* Студент: [Александр Суберляк](https://up.htmlacademy.ru/adaptive/8/user/93530).
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
-
-**Обратите внимание на файлы:**
-
-- [Specification.md](Specification.md) — техническое задание для вашего проекта. Прочтите его и следуйте требованиям.
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`._
@@ -57,5 +50,5 @@ git clone SSH-адрес_вашего_форка
 
 [travis-image]: https://travis-ci.org/htmlacademy-adaptive/93530-pink.svg?branch=master
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/93530-pink
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/93530-pink/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/93530-pink?type=dev
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/93530-pink.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/93530-pink
