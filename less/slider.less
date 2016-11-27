@@ -28,6 +28,9 @@
     display:inline-block;
     margin: 0 10px;
   }
+  &__controls label:hover {
+    background-color: #7e868f;
+  }
 }
 .slider input[type=radio] {
   display: none;
@@ -88,9 +91,10 @@
 }
 @media @desktop-widths {
     .slider {
+      position: relative;
       margin-top: 50px;
       &__inner {
-        width: 820px;
+        width: 68.4%;
         margin: 0 auto;
         &--table {
           width: 940px;

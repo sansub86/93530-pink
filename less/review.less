@@ -1,8 +1,11 @@
 .review {
-  margin-top: 40px;
+  margin-top: 42px;
   margin-bottom: 30px;
   min-width: 320px;
    &__btn-back, &__btn-next {
+     display: none;
+   }
+   &__quotes {
      display: none;
    }
   &__h3 {
@@ -63,47 +66,39 @@
 }
 @media @desktop-widths {
   .review {
-    margin-top: 185px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 38px;
     position: relative;
+    &__quotes {
+      display: block;
+      margin-top: 71px;
+      height: 64px;
+      background: url('../img/icon-quotes.svg') no-repeat 50% 0;
+    }
     &__btn-back, &__btn-next {
       display: block;
       width: 22px;
       height: 42px;
       position: absolute;
+      top: 25px;
+      cursor: pointer;
     }
     &__btn-back {
-        left: 127px;
-        top: 28px;
-      }
-      &__btn-back::before {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 30px;
-        border-top: 2px solid #c2c6ca;
-        border-left: 2px solid #c2c6ca;
-        transform: rotate(-45deg);
-        position: absolute;
-        top: 5px;
-        left: 5px;
-      }
-      &__btn-next::after {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 30px;
-        border-top: 2px solid #c2c6ca;
-        border-left: 2px solid #c2c6ca;
-        transform: rotate(135deg);
-        position: absolute;
-        top: 5px;
-        right: 5px;
+        left: 10.98%;
       }
     &__btn-next {
-        right: 130px;
-        top: 28px;
+        right: 10.98%;
       }
+    &__btn-back-icon, &__btn-next-icon {
+      fill:#bec2c7;
+    }
+    &__btn-back-icon:hover, &__btn-next-icon:hover {
+      fill:#7e868f;
+    }
+    &__btn-back-icon:active, &__btn-next-icon:active {
+      fill:#e9ebec;
+    }
+
     &__slide1, &__slide2, &__slide3 {
       width:820px;
     }

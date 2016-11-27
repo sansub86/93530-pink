@@ -1,36 +1,104 @@
 .logo {
   display: block;
   text-decoration: none;
+  margin-left: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   width: 75px;
   height: 22px;
-  margin-left: 20px;
-  background: transparent url('../img/logo-pink-white-mobile.svg') no-repeat;
   &--footer {
-    display: block;
-    width: 150px;
+    width: 147px;
     height: 40px;
-    background: transparent url('../img/logo-pink-blue-mobile.svg') no-repeat;
-    margin-bottom: 37px;
-    margin-left: 9px;
+    font-size: 0;
+    margin-bottom: 23px;
+    margin-left: 0px;
+  }
+  &__footer-desktop {
+      display: none;
+  }
+  &__footer-mobile {
+    fill: #000000;
+  }
+  &__footer-mobile:hover {
+    fill: #d22856;
+  }
+  &__footer-mobile:active {
+    fill: #d22856;
+    opacity: 0.3;
+  }
+  &__header-tablet, &__header-desktop {
+    display: none;
+  }
+  &__header-mobile {
+    fill: #ffffff;
+  }
+  &:hover &__header-mobile {
+   fill: #d22856;
+  }
+  &:active &__header-mobile {
+   fill: rgba(255, 255, 255, .3);
   }
 }
-
 @media @tablet-widths {
   .logo {
-    width: 150px;
+    width: 147px;
     height: 40px;
-    padding-top: 2px;
-    background: transparent url('../img/logo-pink-white.svg') no-repeat 0 0;
+    padding-top: 26px;
+    padding-bottom: 44px;
+    padding-left: 40px;
     margin: 0;
+    &__header-mobile, &__header-desktop {
+      display: none;
+    }
+    &__header-tablet {
+      display: block;
+    }
+    &__header-tablet {
+      fill: #ffffff;
+    }
+    &:hover &__header-tablet{
+     fill: #d22856;
+    }
+    &:active &__header-tablet {
+     fill: rgba(255, 255, 255, .3);
+    }
     &--footer {
-        background: transparent url('../img/logo-pink-blue-mobile.svg') no-repeat;
-        margin-top: 0;
+        margin-top: -20px;
+        padding: 0;
     }
   }
 }
 @media @desktop-widths {
   .logo {
-
     margin-top: 4px;
+    padding: 0;
+    &__header-tablet, &__footer-mobile {
+      display: none;
+    }
+    &__header-desktop {
+      display: block;
+    }
+    &__header-desktop {
+      fill:#ffffff;
+    }
+    &:hover &__header-desktop {
+     fill: #d22856;
+    }
+    &:active &__header-desktop {
+     fill: rgba(255, 255, 255, .3);
+    }
+    &--footer {
+      margin-top: 10px;
+    }
+    &__footer-desktop {
+      display: inline-block;
+    }
+    &__footer-desktop:hover {
+      fill: #d22856;
+    }
+    &__footer-desktop:active {
+      fill: #d22856;
+      opacity: 0.3;
+    }
   }
 }
