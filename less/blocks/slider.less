@@ -1,116 +1,115 @@
 .slider {
   padding-top: 90px;
-  &__inner {
-    overflow: hidden;
-    width: 280px;
-    margin: 0 auto;
-    &--table {
-      width: 320px;
-    }
+}
+.slider__inner {
+  overflow: hidden;
+  width: 280px;
+  margin: 0 auto;
+  &--table {
+    width: 320px;
   }
-  &__slides {
-    display: flex;
-    width: 300%;
+}
+.slider__slides {
+  display: flex;
+  width: 300%;
+}
+.slider__controls {
+  font-size: 0;
+  margin-top: 27px;
+  text-align: center;
+  &--table {
+    margin-top: 35px;
   }
-  &__controls {
-    font-size: 0;
-    margin-top: 27px;
-    text-align: center;
-    &--table {
-      margin-top: 35px;
-    }
-  }
-  &__controls label {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: #d2d4d8;
-    display:inline-block;
-    vertical-align: middle;
-    margin: 0 10px;
-  }
-  &__controls label:hover {
-    background-color: #7e868f;
-  }
+}
+.slider__controls label {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #d2d4d8;
+  display:inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.slider__controls label:hover {
+  background-color: #7e868f;
 }
 .slider input[type=radio] {
   display: none;
 }
-#btn-1:checked ~ .slider__controls label[for="btn-1"],
-#btn-2:checked ~ .slider__controls label[for="btn-2"],
-#btn-3:checked ~ .slider__controls label[for="btn-3"],
-#btn-4:checked ~ .slider__controls label[for="btn-4"],
-#btn-5:checked ~ .slider__controls label[for="btn-5"],
-#btn-6:checked ~ .slider__controls label[for="btn-6"]  {
+.slider__btn-1:checked ~ .slider__controls label[for="btn-1"],
+.slider__btn-2:checked ~ .slider__controls label[for="btn-2"],
+.slider__btn-3:checked ~ .slider__controls label[for="btn-3"],
+.slider__btn-4:checked ~ .slider__controls label[for="btn-4"],
+.slider__btn-5:checked ~ .slider__controls label[for="btn-5"],
+.slider__btn-6:checked ~ .slider__controls label[for="btn-6"]  {
     background-color: transparent;
     box-shadow:0 0 0 3px #79828b;
 }
-#btn-1:checked ~ .slider__inner .slider__slides {
+.slider__btn-1:checked ~ .slider__inner .slider__slides {
     transform: translate(0);
 }
-#btn-2:checked ~ .slider__inner .slider__slides {
+.slider__btn-2:checked ~ .slider__inner .slider__slides {
     transform: translate(-280px);
 }
-#btn-3:checked ~ .slider__inner .slider__slides {
+.slider__btn-3:checked ~ .slider__inner .slider__slides {
     transform: translate(-560px);
 }
-#btn-4:checked ~ .slider__inner .slider__slides {
+.slider__btn-4:checked ~ .slider__inner .slider__slides {
     transform: translate(0);
 }
-#btn-5:checked ~ .slider__inner .slider__slides {
+.slider__btn-5:checked ~ .slider__inner .slider__slides {
     transform: translate(-280px);
 }
-#btn-6:checked ~ .slider__inner .slider__slides {
+.slider__btn-6:checked ~ .slider__inner .slider__slides {
     transform: translate(-560px);
 }
 @media @tablet-widths {
-    .slider {
-      &__inner {
-        width: 620px;
-      }
-      &__controls {
-        &--table label {
-          display: none;
-        }
-      }
-    }
-    #btn-1:checked ~ .slider__inner .slider__slides {
-        transform: translate(0);
-    }
-    #btn-2:checked ~ .slider__inner .slider__slides {
-        transform: translate(-620px);
-    }
-    #btn-3:checked ~ .slider__inner .slider__slides {
-        transform: translate(-1240px);
-    }
-    #btn-5:checked ~ .slider__inner .slider__slides {
-        transform: translate(0px);
-    }
-    #btn-6:checked ~ .slider__inner .slider__slides {
-        transform: translate(0px);
-    }
-}
-@media @desktop-widths {
-    .slider {
-      position: relative;
-      margin: 50px auto 0 auto;
-      width: 940px;
-      &__inner {
-        width: 68.4%;
-        margin: 0 auto;
-        &--table {
-          width: 940px;
-        }
-      }
-    }
-    #btn-1:checked ~ .slider__inner .slider__slides {
-        transform: translate(0);
-    }
-    #btn-2:checked ~ .slider__inner .slider__slides {
-        transform: translate(-820px);
-    }
-    #btn-3:checked ~ .slider__inner .slider__slides {
-        transform: translate(-1640px);
+  .slider__inner {
+    width: 620px;
+  }
+  .slider__controls {
+    &--table label {
+      display: none;
     }
   }
+  .slider__btn-1:checked ~ .slider__inner .slider__slides {
+      transform: translate(0);
+  }
+  .slider__btn-2:checked ~ .slider__inner .slider__slides {
+      transform: translate(-620px);
+  }
+  .slider__btn-3:checked ~ .slider__inner .slider__slides {
+      transform: translate(-1240px);
+  }
+  .slider__btn-5:checked ~ .slider__inner .slider__slides {
+      transform: translate(0px);
+  }
+  .slider__btn-6:checked ~ .slider__inner .slider__slides {
+      transform: translate(0px);
+  }
+}
+@media @desktop-widths {
+  .slider {
+    position: relative;
+    margin: 50px auto 0 auto;
+    width: 940px;
+    padding-top: 0;
+  }
+  .slider__inner {
+    width: 83%;
+    margin: 0 auto;
+    &--table {
+      width: 940px;
+    }
+  }
+  .slider__btn-1:checked ~ .slider__inner .slider__slides {
+      transform: translate(0);
+  }
+  .slider__btn-2:checked ~ .slider__inner .slider__slides {
+      transform: translate(-820px);
+  }
+  .slider__btn-3:checked ~ .slider__inner .slider__slides {
+      transform: translate(-1640px);
+  }
+}

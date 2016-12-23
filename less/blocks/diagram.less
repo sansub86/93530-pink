@@ -8,30 +8,6 @@
     margin-top: 97px;
     margin-bottom: 121px;
     position: relative;
-    &__h2 {
-      font-family: "Open Sans Bold", Arial, sans-serif;
-      font-size: 30px;
-      line-height: 36px;
-      margin-bottom: 9px;
-      margin-right: 200px;
-      margin-left: -2px;
-      text-align: left;
-      }
-    &__item {
-      font-family: "Open Sans", Arial, sans-serif;
-      font-size: 14px;
-      line-height: 24px;
-      margin-bottom: 8px;
-      margin-left: -2px;
-      margin-right: 50px;
-    }
-    &__link {
-      font-family: "Open Sans", Arial, sans-serif;
-      font-size: 14px;
-      line-height: 24px;
-      margin-left: -2px;
-      color: #d22856;
-    }
     &::before {
       content: '';
       display: block;
@@ -60,6 +36,30 @@
       top:17px;
     }
   }
+  .diagram__h2 {
+      font-family: "Open Sans Bold", Arial, sans-serif;
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 9px;
+      margin-right: 200px;
+      margin-left: -2px;
+      text-align: left;
+  }
+  .diagram__item {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-left: -2px;
+    margin-right: 50px;
+  }
+  .diagram__item__link {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: -2px;
+    color: #d22856;
+  }
 }
 @media @desktop-widths {
   .diagram {
@@ -83,17 +83,17 @@
       font-size: 120px;
       line-height: 205px;
     }
-    &__item {
-      margin-top: 25px;
-      margin-right: 170px;
-      margin-bottom: 30px;
-    }
-    &__h2 {
-      line-height: 30px;
-    }
-    &__link, &__item {
-      font-size: 18px;
-      line-height: 30px;
-    }
+  }
+  .diagram__item {
+    margin-top: 25px;
+    margin-right: 170px;
+    margin-bottom: 30px;
+  }
+  .diagram__h2 {
+    line-height: 30px;
+  }
+  .diagram__link, .diagram__item {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
