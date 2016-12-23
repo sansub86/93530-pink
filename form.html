@@ -166,24 +166,21 @@
           <div class="forms__page-forms">
             <div class="forms__name-wrap">
               <div class="forms__textfield">
-                <h3 class="forms__textfield-header">Фамилия:</h3>
+                <label class="forms__textfield-header" for="surname-id">Фамилия:</label>
                 <div class="forms__input-item">
-                  <input class="forms__input-text" type="text" name="surname" id="surname-id">
-                  <label class="forms__label" for="surname-id">Укажите фамилию</label>
+                  <input class="forms__input-text" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию">
                 </div>
               </div>
               <div class="forms__textfield">
-                <h3 class="forms__textfield-header">Имя:</h3>
+                <label class="forms__textfield-header" for="name-id">Имя:</label>
                 <div class="forms__input-item">
-                  <input class="forms__input-text" type="text" name="name" id="name-id">
-                  <label class="forms__label" for="name-id">Введите ваше имя</label>
+                  <input class="forms__input-text" type="text" name="name" id="name-id" placeholder="Введите ваше имя">
                 </div>
               </div>
               <div class="forms__textfield">
-                <h3 class="forms__textfield-header">Отчество:</h3>
+                <label class="forms__textfield-header" for="patronymic-id">Отчество:</label>
                 <div class="forms__input-item">
-                  <input class="forms__input-text" type="text" name="patronymic" id="patronymic-id">
-                  <label class="forms__label" for="patronymic-id">Ну и отчество тоже</label>
+                  <input class="forms__input-text" type="text" name="patronymic" id="patronymic-id" placeholder="Ну и отчество тоже">
                 </div>
               </div>
             </div>
@@ -220,19 +217,17 @@
               <h3 class="forms__textfield-header forms__textfield-header--center forms__textfield-header--contacts">Контактная информация</h3>
               <div class="forms__contacts-items">
                 <div class="forms__textfield forms__textfield--bottom">
-                  <h3 class="forms__textfield-header forms__textfield-header--hidden">Номерок телефончика</h3>
-                  <h3 class="forms__textfield-header forms__textfield-header--normal">Номер телефона</h3>
+                  <label class="forms__textfield-header forms__textfield-header--hidden" for="telephone-id">Номерок телефончика</label>
+                  <label class="forms__textfield-header forms__textfield-header--normal" for="telephone-id">Номер телефона</label>
                   <div class="forms__input-item forms__input-item--telephone">
-                    <input class="forms__input-text" type="text" name="telephone" id="telephone-id">
-                    <label class="forms__label" for="telephone-id">Номер, пожалуйста</label>
+                    <input class="forms__input-text" type="text" name="telephone" id="telephone-id" placeholder="Номер, пожалуйста">
                   </div>
                 </div>
                 <div class="forms__textfield forms__textfield--bottom ">
-                  <h3 class="forms__textfield-header forms__textfield-header--hidden">Адресок почты</h3>
-                  <h3 class="forms__textfield-header forms__textfield-header--normal">Адрес почты</h3>
+                  <label class="forms__textfield-header forms__textfield-header--hidden" for="mail-id">Адресок почты</label>
+                  <label class="forms__textfield-header forms__textfield-header--normal" for="mail-id">Адрес почты</label>
                   <div class="forms__input-item forms__input-item--mail">
-                    <input class="forms__input-text" type="email" name="mail" id="mail-id">
-                    <label class="forms__label" for="mail-id">Введите почту</label>
+                    <input class="forms__input-text" type="email" name="mail" id="mail-id" placeholder="Введите почту">
                   </div>
                 </div>
               </div>
@@ -256,10 +251,9 @@
               </div>
             </div>
             <div class="forms__wrap forms__wrap--commit">
-              <h3 class="forms__textfield-header forms__textfield-header--center forms__textfield-header--commit">Опишите свои эмоции</h3>
+              <label class="forms__textfield-header forms__textfield-header--center forms__textfield-header--commit" for="textarea-id">Опишите свои эмоции</label>
               <div class="forms__commit">
-                <textarea class="forms__input-text forms__input-text--textarea" name="commit-field" id="textarea-id" rows="12" cols="48"></textarea>
-                <label for="textarea-id">Можно прям в красках, не стесняясь в выражениях</label>
+                <textarea class="forms__input-text forms__input-text--textarea" name="commit-field" id="textarea-id" rows="12" cols="48" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </div>
             <div class="forms__wrap-button">
@@ -271,8 +265,10 @@
     </main>
     <footer class="main-footer">
       <a class="logo logo--footer" href="#">Pink
-        <svg class="logo__footer-mobile" width="147" height="40"><use xlink:href="#logo-pink-blue-mobile"></use></svg>
-        <svg class="logo__footer-desktop" width="147" height="40"><use xlink:href="#logo-pink-blue-desktop"></use></svg>
+        <picture>
+          <source media="(min-width: 660px)" srcset="img/icons/logo-pink-blue-desktop.svg">
+          <img src="img/icons/logo-pink-blue-mobile.svg" class="">
+        </picture>
       </a>
       <div class="social">
         <a class="social__btn social__btn--twitter" href="#">twitter

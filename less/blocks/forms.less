@@ -93,10 +93,44 @@
     display: none;
   }
 }
+
+.forms__input-text::-webkit-input-placeholder {
+  color:#000000;
+  font-weight: normal;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+}
+.forms__input-text::-moz-placeholder {
+  color:#000000;
+  font-weight: normal;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+}/* Firefox 19+ */
+.forms__input-text:-moz-placeholder {
+  color:#000000;
+  font-weight: normal;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+}/* Firefox 18- */
+.forms__input-text:-ms-input-placeholder {
+  color:#000000;
+  font-weight: normal;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+}
+.forms__input-text:focus::-webkit-input-placeholder {
+  color: transparent
+}
+.forms__input-text:focus::-moz-placeholder {
+  color: transparent
+}
+.forms__input-text:focus:-moz-placeholder {
+  color: transparent
+}
+.forms__input-text:focus:-ms-input-placeholder {
+  color: transparent
+}
 .forms__label {
-  position: absolute;
-  left:23px;
-  top:22px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;

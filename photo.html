@@ -321,8 +321,10 @@
     </main>
     <footer class="main-footer">
       <a class="logo logo--footer" href="#">Pink
-        <svg class="logo__footer-mobile" width="147" height="40"><use xlink:href="#logo-pink-blue-mobile"></use></svg>
-        <svg class="logo__footer-desktop" width="147" height="40"><use xlink:href="#logo-pink-blue-desktop"></use></svg>
+        <picture>
+          <source media="(min-width: 660px)" srcset="img/icons/logo-pink-blue-desktop.svg">
+          <img src="img/icons/logo-pink-blue-mobile.svg" class="">
+        </picture>
       </a>
       <div class="social">
         <a class="social__btn social__btn--twitter" href="#">twitter
