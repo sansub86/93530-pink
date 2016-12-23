@@ -6,57 +6,57 @@
   &--hide {
     display: none;
   }
-  &__burger{
-    fill: #ffffff;
-  }
-  &__burger:hover {
-    fill: #d22856;
-  }
-  &__burger:active {
-   fill: rgba(210, 40, 86, .3);
-  }
-  &__cross {
-    fill: #ffffff;
-  }
-  &__cross:hover {
-    fill: #d22856;
-  }
-  &__cross:active {
-   fill: rgba(210, 40, 86, .3);
-  }
-  &__switch {
-    position: absolute;
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    background: none;
-    top: 23px;
+}
+.main-nav__burger{
+  fill: #ffffff;
+}
+.main-nav__burger:hover {
+  fill: #d22856;
+}
+.main-nav__burger:active {
+ fill: rgba(210, 40, 86, .3);
+}
+.main-nav__cross {
+  fill: #ffffff;
+}
+.main-nav__cross:hover {
+  fill: #d22856;
+}
+.main-nav__cross:active {
+ fill: rgba(210, 40, 86, .3);
+}
+.main-nav__switch {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background: none;
+  top: 23px;
+  right: 20px;
+  width: 50px;
+  height: 24px;
+  &--cross {
+    top: 20px;
     right: 20px;
-    width: 50px;
-    height: 24px;
-    &--cross {
-      top: 20px;
-      right: 20px;
-      width: 25px;
-      height: 25px;
-    }
+    width: 25px;
+    height: 25px;
   }
 }
 @media @tablet-widths {
   .main-nav {
     box-sizing: border-box;
     border-bottom: none;
-    &__switch {
+  }
+  .main-nav__switch {
+    top: 43px;
+    right: 40px;
+    width: 50px;
+    height: 24px;
+    &--cross {
       top: 43px;
       right: 40px;
-      width: 50px;
-      height: 24px;
-      &--cross {
-        top: 43px;
-        right: 40px;
-        width: 25px;
-        height: 25px;
-      }
+      width: 25px;
+      height: 25px;
     }
   }
 }
@@ -69,8 +69,8 @@
     padding-right: 130px;
     min-width: 940px;
     display: flex;
-    &__switch {
-      display: none;
-    }
+  }
+  .main-nav__switch {
+    display: none;
   }
 }

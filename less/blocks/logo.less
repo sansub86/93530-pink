@@ -13,31 +13,31 @@
     margin-bottom: 18px;
     margin-left: 0px;
   }
-  &__footer-desktop {
-      display: none;
-  }
-  &__footer-mobile {
-    fill: #000000;
-  }
-  &__footer-mobile:hover {
-    fill: #d22856;
-  }
-  &__footer-mobile:active {
-    fill: #d22856;
-    opacity: 0.3;
-  }
-  &__header-tablet, &__header-desktop {
-    display: none;
-  }
-  &__header-mobile {
-    fill: #ffffff;
-  }
   &:hover &__header-mobile {
    fill: #d22856;
   }
   &:active &__header-mobile {
    fill: rgba(255, 255, 255, .3);
   }
+}
+.logo__footer-desktop {
+    display: none;
+}
+.logo__footer-mobile {
+  fill: #000000;
+}
+.logo__footer-mobile:hover {
+  fill: #d22856;
+}
+.logo__footer-mobile:active {
+  fill: #d22856;
+  opacity: 0.3;
+}
+.logo__header-tablet, .logo__header-desktop {
+  display: none;
+}
+.logo__header-mobile {
+  fill: #ffffff;
 }
 @media @tablet-widths {
   .logo {
@@ -47,15 +47,6 @@
     padding-bottom: 44px;
     padding-left: 40px;
     margin: 0;
-    &__header-mobile, &__header-desktop {
-      display: none;
-    }
-    &__header-tablet {
-      display: block;
-    }
-    &__header-tablet {
-      fill: #ffffff;
-    }
     &:hover &__header-tablet{
      fill: #d22856;
     }
@@ -67,20 +58,20 @@
         padding: 0;
     }
   }
+  .logo__header-mobile, .logo__header-desktop {
+    display: none;
+  }
+  .logo__header-tablet {
+    display: block;
+  }
+  .logo__header-tablet {
+    fill: #ffffff;
+  }
 }
 @media @desktop-widths {
   .logo {
     margin-top: 4px;
     padding: 0;
-    &__header-tablet, &__footer-mobile {
-      display: none;
-    }
-    &__header-desktop {
-      display: block;
-    }
-    &__header-desktop {
-      fill:#ffffff;
-    }
     &:hover &__header-desktop {
      fill: #d22856;
     }
@@ -90,16 +81,25 @@
     &--footer {
       margin-top: 10px;
     }
-    &__footer-desktop {
-      display: inline-block;
-      vertical-align: middle;
-    }
-    &__footer-desktop:hover {
-      fill: #d22856;
-    }
-    &__footer-desktop:active {
-      fill: #d22856;
-      opacity: 0.3;
-    }
+  }
+  .logo__header-tablet, .logo__footer-mobile {
+    display: none;
+  }
+  .logo__header-desktop {
+    display: block;
+  }
+  .logo__header-desktop {
+    fill:#ffffff;
+  }
+  .logo__footer-desktop {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .logo__footer-desktop:hover {
+    fill: #d22856;
+  }
+  .logo__footer-desktop:active {
+    fill: #d22856;
+    opacity: 0.3;
   }
 }

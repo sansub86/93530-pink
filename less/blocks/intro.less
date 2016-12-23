@@ -9,70 +9,69 @@
                 url('../img/bg-back-mobile@2x.jpg') no-repeat 50% 0;
     background-size: auto 286px, auto 465px;
   }
-
-  &__download {
-    display: block;
-    width: 274px;
-    color: #ffffff;
-    text-decoration: none;
-    font-family: "Open Sans Bold", Arial, sans-serif;
-    text-align: center;
-    font-size: 18px;
-    line-height: 19px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    padding: 15px 0;
-    border: 3px solid #ffffff;
-    border-radius: 55px;
+}
+.intro__download {
+  display: block;
+  width: 274px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 19px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 15px 0;
+  border: 3px solid #ffffff;
+  border-radius: 55px;
+}
+.intro__download:hover {
+  background-color: #ffffff;
+  color: #d22856;
+}
+.intro__download:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, .3);
+}
+.intro__download-block {
+    padding-top: 28px;
+    padding-bottom: 5px;
+    min-width: 320px;
+    background: #1d2631;
+}
+.intro__intro-wrapper {
+  margin: 0 auto;
+  width: 220px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.intro__intro-logo {
+  width: 60px;
+  height: 63px;
+  font-size: 0;
   }
-  &__download:hover {
-    background-color: #ffffff;
-    color: #d22856;
-  }
-  &__download:active {
-    background-color: #ffffff;
-    color: rgba(210, 40, 86, .3);
-  }
-  &__download-block {
-      padding-top: 28px;
-      padding-bottom: 5px;
-      min-width: 320px;
-      background: #1d2631;
-  }
-  &__intro-wrapper {
-    margin: 0 auto;
-    width: 220px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-  }
-  &__intro-logo {
-    width: 60px;
-    height: 63px;
-    font-size: 0;
-    }
-  &__intro-logo--apple {
-    background: url('../img/logo-apple.svg') no-repeat 50% 6px;
-  }
-  &__intro-logo--android {
-    background: url('../img/logo-android.svg') no-repeat 50% 15px;
-  }
-  &__intro-logo--windows {
-    background: url('../img/logo-microsoft.svg') no-repeat 50% 18px;
-  }
-  &__message {
-    font-family: "Open Sans Light", Arial, sans-serif;
-    font-size: 14px;
-    width: 280px;
-    line-height: 24px;
-    text-align: center;
-    color: #ffffff;
-    padding: 25px 0;
-    margin: 0 auto;
-  }
-  &__header {
-      display: none;
-  }
+.intro__intro-logo--apple {
+  background: url('../img/logo-apple.svg') no-repeat 50% 6px;
+}
+.intro__intro-logo--android {
+  background: url('../img/logo-android.svg') no-repeat 50% 15px;
+}
+.intro__intro-logo--windows {
+  background: url('../img/logo-microsoft.svg') no-repeat 50% 18px;
+}
+.intro__message {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 14px;
+  width: 280px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  padding: 25px 0;
+  margin: 0 auto;
+}
+.intro__header {
+    display: none;
 }
 @media @tablet-widths {
   .intro {
@@ -86,36 +85,36 @@
                   url('../img/bg-back-tablet@2x.jpg') no-repeat 50% 100%;
       background-size: auto 545px, cover;
     }
-    &__download-block {
-      background-color: transparent;
-      width: 320px;
-      margin-left: 30px;
-      padding-top: 202px;
-    }
-    &__header {
-      display: inline;
-      font-family: "Open Sans Light", Arial, sans-serif;
-      font-size: 40px;
-      line-height: 48px;
-      color: #ffffff;
-      display: block;
-      margin-left: 65px;
-      margin-right: 65px;
-      text-align: center;
-    }
-    &__download {
-      margin-top: 30px;
-      width: 294px;
-      margin-bottom: 42px;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    &__message {
-      font-size: 18px;
-      width: auto;
-      margin: 0;
-      padding-top: 37px;
-    }
+  }
+  .intro__download-block {
+    background-color: transparent;
+    width: 320px;
+    margin-left: 30px;
+    padding-top: 202px;
+  }
+  .intro__header {
+    display: inline;
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #ffffff;
+    display: block;
+    margin-left: 65px;
+    margin-right: 65px;
+    text-align: center;
+  }
+  .intro__download {
+    margin-top: 30px;
+    width: 294px;
+    margin-bottom: 42px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .intro__message {
+    font-size: 18px;
+    width: auto;
+    margin: 0;
+    padding-top: 37px;
   }
 }
 @media @desktop-widths {
@@ -130,33 +129,33 @@
                   url('../img/bg-back-desktop@2x.jpg') no-repeat 50% 100%;
       background-size: auto 645px, cover;
     }
-    &__download-block {
-      margin-left: 120px;
-      padding-top: 200px;
-    }
-    &__header {
-      font-size: 50px;
-      line-height: 61px;
-      margin-left: 30px;
-      margin-top: 18px;
-      margin-right: 30px;
-      padding-bottom: 18px;
-    }
-    &__download {
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 21px;
+  }
+  .intro__download-block {
+    margin-left: 120px;
+    padding-top: 200px;
+  }
+  .intro__header {
+    font-size: 50px;
+    line-height: 61px;
+    margin-left: 30px;
+    margin-top: 18px;
+    margin-right: 30px;
+    padding-bottom: 18px;
+  }
+  .intro__download {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 21px;
 
-    }
-    &__intro-wrapper {
-      margin-left: auto;
-      margin-top: 62px;
-      margin-right: auto;
-    }
-    &__message {
-      padding-top: 57px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  }
+  .intro__intro-wrapper {
+    margin-left: auto;
+    margin-top: 62px;
+    margin-right: auto;
+  }
+  .intro__message {
+    padding-top: 57px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

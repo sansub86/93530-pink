@@ -2,66 +2,65 @@
   margin-top: 42px;
   margin-bottom: 30px;
   min-width: 320px;
-   &__btn-back, &__btn-next {
-     display: none;
-   }
-   &__quotes {
-     display: none;
-   }
-  &__h3 {
-    font-family: "Open Sans Bold", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    margin: 0 20px;
-    padding-bottom: 13px;
-  }
-  &__about {
-    display: none;
-  }
-  &__item {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 30px;
-    text-align: center;
-    margin: 0;
-  }
-  &__slide1, &__slide2, &__slide3 {
-    width:280px;
-  }
+}
+.review__btn-back, .review__btn-next {
+ display: none;
+}
+.review__quotes {
+ display: none;
+}
+.review__h3 {
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 20px;
+  padding-bottom: 13px;
+}
+.review__about {
+  display: none;
+}
+.review__item {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+}
+.review__slide1, .review__slide2, .review__slide3 {
+  width:280px;
 }
 @media @tablet-widths {
   .review {
     margin-bottom: 10px;
-    &__btn-back, &__btn-next {
-      display: none;
-    }
-    &__slide1, &__slide2, &__slide3 {
-      width:620px;
-      position: relative;
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: flex-end;
-    }
-
-    &__about {
-      display: block;
-      font-family: "Open Sans", Arial, sans-serif;
-      font-size: 14px;
-      line-height: 30px;
-      text-align: center;
-      order: -1;
-    }
-    &__item {
-      font-size: 18px;
-      line-height: 30px;
-    }
-    &__h3 {
-      font-size: 20px;
-      line-height: 30px;
-      margin-top: 35px;
-      padding-bottom: 3px;
-    }
+  }
+  .review__btn-back, .review__btn-next {
+    display: none;
+  }
+  .review__slide1, .review__slide2, .review__slide3 {
+    width:620px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .review__about {
+    display: block;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    order: -1;
+  }
+  .review__item {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .review__h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 35px;
+    padding-bottom: 3px;
   }
 }
 @media @desktop-widths {
@@ -69,51 +68,50 @@
     margin-top: 0px;
     margin-bottom: 38px;
     position: relative;
-    &__quotes {
-      display: block;
-      margin-top: 71px;
-      height: 64px;
-      background: url('../img/icon-quotes.svg') no-repeat 50% 0;
+  }
+  .review__quotes {
+    display: block;
+    margin-top: 71px;
+    height: 64px;
+    background: url('../img/icon-quotes.svg') no-repeat 50% 0;
+  }
+  .review__btn-back, .review__btn-next {
+    display: block;
+    width: 22px;
+    height: 42px;
+    position: absolute;
+    top: 25px;
+    cursor: pointer;
+  }
+  .review__btn-back {
+      left: 10.98%;
     }
-    &__btn-back, &__btn-next {
-      display: block;
-      width: 22px;
-      height: 42px;
-      position: absolute;
-      top: 25px;
-      cursor: pointer;
+  .review__btn-next {
+      right: 10.98%;
     }
-    &__btn-back {
-        left: 10.98%;
-      }
-    &__btn-next {
-        right: 10.98%;
-      }
-    &__btn-back-icon, &__btn-next-icon {
-      fill:#bec2c7;
-    }
-    &__btn-back-icon:hover, &__btn-next-icon:hover {
-      fill:#7e868f;
-    }
-    &__btn-back-icon:active, &__btn-next-icon:active {
-      fill:#e9ebec;
-    }
-
-    &__slide1, &__slide2, &__slide3 {
-      width:820px;
-    }
-    &__h3 {
-      font-size: 24px;
-      line-height: 30px;
-    }
-    &__about {
-      font-size: 18px;
-      line-height: 30px;
-    }
-    &__item {
-      font-size: 18px;
-      line-height: 30px;
-      margin: 0 30px;
-    }
+  .review__btn-back-icon, .review__btn-next-icon {
+    fill:#bec2c7;
+  }
+  .review__btn-back-icon:hover, .review__btn-next-icon:hover {
+    fill:#7e868f;
+  }
+  .review__btn-back-icon:active, .review__btn-next-icon:active {
+    fill:#e9ebec;
+  }
+  .review__slide1, .review__slide2, .review__slide3 {
+    width:820px;
+  }
+  .review__h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .review__about {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .review__item {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 30px;
   }
 }
