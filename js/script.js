@@ -1,20 +1,21 @@
-var btnSwitch = document.querySelector(".main-nav__switch");
-var burgerIcon = document.querySelector(".main-nav__burger");
-var crossIcon = document.querySelector(".main-nav__cross");
+var btnSwitch = window.document.querySelector(".main-nav__switch");
+var burgerIcon = window.document.querySelector(".main-nav__burger");
+var crossIcon = window.document.querySelector(".main-nav__cross");
 var mainMenu = document.querySelector(".main-menu");
-var mainNav = document.querySelector(".main-nav");
-var textfield = document.querySelectorAll(".forms__input-text");
-var mainForm = document.querySelector(".forms__main-form");
-var nameTextfield = document.getElementById("name-id");
-var mailTextfield = document.getElementById("mail-id");
-var popupError = document.querySelector(".forms__popup-error");
-var popupSend = document.querySelector(".forms__popup-send");
-var btnOk = document.querySelector(".forms--btn-ok");
-var btnClose = document.querySelector(".forms--btn-close");
+var mainNav = window.document.querySelector(".main-nav");
+var textfield = window.document.querySelectorAll(".forms__input-text");
+var mainForm = window.document.querySelector(".forms__main-form");
+var nameTextfield = window.document.getElementById("name-id");
+var mailTextfield = window.document.getElementById("mail-id");
+var popupError = window.document.querySelector(".forms__popup-error");
+var popupSend = window.document.querySelector(".forms__popup-send");
+var btnOk = window.document.querySelector(".forms--btn-ok");
+var btnClose = window.document.querySelector(".forms--btn-close");
+
 //скроем выпадающее меню хедера и всплывающие окна
-btnSwitch.classList.remove("main-nav__switch--cross");
-burgerIcon.classList.remove("main-nav--hide");
-crossIcon.classList.add("main-nav--hide");
+if(btnSwitch!=null)btnSwitch.classList.remove("main-nav__switch--cross");
+if(burgerIcon!=null)burgerIcon.classList.remove("main-nav--hide");
+if(crossIcon!=null)crossIcon.classList.add("main-nav--hide");
 if(popupError!=null)popupError.classList.add("main-nav--hide");
 if(popupSend!=null)popupSend.classList.add("main-nav--hide");
 if(mainMenu!=null)mainMenu.classList.add("main-menu--closed");
@@ -81,7 +82,7 @@ function initialize() {
   }
   var map = new google.maps.Map(mapCanvas, mapOptions);
 
-  var image = './img/icon-map-marker.svg';
+  var image = "./img/icon-map-marker.png"
   var myLatLng = new google.maps.LatLng(59.9388218,30.3230753);
   var pinkMarker = new google.maps.Marker({
     position: myLatLng,
