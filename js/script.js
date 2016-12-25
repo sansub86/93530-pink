@@ -82,7 +82,7 @@ function initialize() {
   }
   var map = new google.maps.Map(mapCanvas, mapOptions);
 
-  var image = './img/icon-map-marker.svg';
+  var image = "./img/icon-map-marker.png"
   var myLatLng = new google.maps.LatLng(59.9388218,30.3230753);
   var pinkMarker = new google.maps.Marker({
     position: myLatLng,
