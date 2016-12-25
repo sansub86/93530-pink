@@ -63,7 +63,7 @@ gulp.task("build", function(fn) {
     "clean",
     "copy",
     "style",
-  //  "images",
+    "images",
     "symbols",
     fn
   );
